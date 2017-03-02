@@ -6,7 +6,7 @@ layout: default
 
   <div class="post-list-featured">
   {% for post in site.posts offset: 0 limit: 1 %}
-    <a href="post.url">
+    <a href="{{post.url}}">
       <div class="cover" style="background-image: url({{post.cover}})">
         <div class="overlay">
         </div>
@@ -39,7 +39,5 @@ layout: default
         </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
