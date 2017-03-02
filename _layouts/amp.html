@@ -224,9 +224,6 @@ footer {
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   </head>
   <body>
-  {% if page.article_id %}
-    <amp-pixel src="//ec2-54-218-97-71.us-west-2.compute.amazonaws.com/datacollectionphp/dataCollectorAmp.php?pageId={{page.page_id}}&articleId={{page.article_id}}&uid=CLIENT_ID(amp)&date=TIMESTAMP"></amp-pixel>
-  {% endif %}
   <div class="blogContainer">
   <h1>
     <a href="{{site.url}}">{{ site.title }}</a>
