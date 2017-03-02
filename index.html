@@ -6,10 +6,7 @@ layout: default
 
   <div class="post-list-featured">
   {% for post in site.posts offset: 0 limit: 1 %}
-    <div class="cover">
-      <figure>
-        <!-- <img src="{{post.cover}}"> -->
-      </figure>
+    <div class="cover" style="background-image: url({{post.cover}})">
       <div class="overlay">
       </div>
     </div>
