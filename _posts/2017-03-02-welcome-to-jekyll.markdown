@@ -2,24 +2,11 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2017-03-02 12:19:23 +0530
-cover: https://cdn9.littlethings.com/app/uploads/2017/02/recipe_card_PerfectBacon-1200x587.jpg
+cover: http://static.fanadnetwork.com/8b42f7aa07705429e0cd37a89816a5d9.jpg
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<p class="" markdown="0">Jolla announces it will be supporting Sony's Open Devices program. You can expect the Sailfish OS from Jolla to run on a range of Sony devices. Earlier this week at Mobile World Congress, Sony announced Sony Xperia X, powered by Sailfish OS.</p><div class="medium-insert-images ui-sortable medium-insert-images-wide" markdown="0"><figure contenteditable="false" markdown="0"><img src="http://static.fanadnetwork.com/8b42f7aa07705429e0cd37a89816a5d9.jpg" alt="" class="ui-sortable-handle" style="width: 100%;" markdown="0"></figure></div><p class="" markdown="0"><br markdown="0"></p><blockquote markdown="0">"The target is to offer the first release to Jolla's customers and community members by the end of Q2/2017"&nbsp;</blockquote><p class="" markdown="0">the press release said.<br markdown="0"></p><div class="medium-insert-embeds medium-insert-embeds-selected medium-insert-embeds-wide" contenteditable="false" markdown="0">
+	<figure markdown="0"><div class="medium-insert-embed" markdown="0">
+			<div class="video video-youtube" style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0px;" markdown="0"><iframe width="515" height="280" src="//www.youtube.com/embed/KBCugfTm-IU" frameborder="0" allowfullscreen="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" markdown="0"></iframe></div>
+		</div>
+	<figcaption contenteditable="true" class="medium-insert-caption-placeholder" data-placeholder="Type caption (optional)" markdown="0"></figcaption></figure><div class="medium-insert-embeds-overlay" markdown="0"></div>
+</div><p markdown="0"><br markdown="0"></p>

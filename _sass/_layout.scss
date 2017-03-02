@@ -53,9 +53,8 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    height: 60px;
     position: fixed;
     left: 0px;
     top: 0px;
@@ -321,10 +320,11 @@
             background: -o-linear-gradient(rgba(141, 196, 222, 0.85), #21bdaf); /* Opera 11.1-12.0 */ 
             background: -moz-linear-gradient(rgba(141, 196, 222, 0.85), #21bdaf); /* Firefox 3.6-15 */
             background: linear-gradient(rgba(141, 196, 222, 0.85), #21bdaf); /* Standard syntax */    
-            min-height: 150px;
-            max-height: 200px;
+            height: 180px;
+            overflow: hidden;
             position: relative;
             img {
+                width: 100%;
                 height: auto;
             }
             &:after {
@@ -334,7 +334,7 @@
                 height: 6px;
                 background: linear-gradient(135deg,#50E3C2,#85BAFF);
                 left: 0px;
-                bottom: -6px;
+                top: 174px;
             }
         }
         .details {
@@ -446,7 +446,10 @@
 
         .post-content {
             margin-bottom: $spacing-unit;
-
+            width: 70%;
+            p {
+                font-size: 16px;
+            }
             h2 {
                 font-size: 32px;
 
