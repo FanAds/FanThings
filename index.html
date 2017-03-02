@@ -6,26 +6,37 @@ layout: default
 
   <div class="post-list-featured">
   {% for post in site.posts offset: 0 limit: 1 %}
-    <div class="cover" style="background-image: url({{post.cover}})">
-      <div class="overlay">
+    <a href="post.url">
+      <div class="cover" style="background-image: url({{post.cover}})">
+        <div class="overlay">
+        </div>
       </div>
-    </div>
-    <div class="details">
-      <div class="title">
-        {{post.title}}
+      <div class="details">
+        <div class="title">
+          {{post.title}}
+        </div>
       </div>
-    </div>
+    </a>
   {% endfor %}
   </div>
   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+    {% for post in site.posts offset: 1 %}
+        <li>
+          <a href="{{post.url}}">
+            <div class="cover">
+              <figure>
+                <img src="{{post.cover}}">
+              </figure>
+              <div class="overlay">
+              </div>
+            </div>
+            <div class="details">
+              <div class="title">
+                {{post.title}}
+              </div>
+            </div>
+          </a>
+        </li>
     {% endfor %}
   </ul>
 
