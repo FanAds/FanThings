@@ -20,17 +20,26 @@
     document.addEventListener("DOMContentLoaded", function(event) { 
       var nativeVideos = document.querySelector('.medium-editor-element .video video');
       var youtubeIframe = document.querySelector('.medium-editor-element .yt.embed iframe');
+      var youtubeIframe2 = document.querySelector('.medium-editor-element .video-youtube iframe');
 
-      if(nativeVideos != null && youtubeIframe != null) {
-        executeYouTube(youtubeIframe);
-      } else if(nativeVideos == null && youtubeIframe != null) {
-        executeYouTube(youtubeIframe);
-      } else if (nativeVideos !== null && youtubeIframe == null) {
-        nativeVideos.setAttribute('autoplay', 'true');
+      var executeYouTube = function(_iframe) {
+        _iframe.src = _iframe.src + '?autoplay=1';
       }
 
-      function executeYouTube () {
-        youtubeIframe.src = youtubeIframe.src + '?autoplay=1';
+      if(nativeVideos != null && (youtubeIframe != null || youtubeIframe2 != null)) {
+        if(youtubeIframe !== null) {
+          executeYouTube(youtubeIframe);
+        } else {
+          executeYouTube(youtubeIframe2);
+        }
+      } else if(nativeVideos == null && (youtubeIframe != null || youtubeIframe2 != null)) {
+        if(youtubeIframe !== null) {
+          executeYouTube(youtubeIframe);
+        } else {
+          executeYouTube(youtubeIframe2);
+        }
+      } else if (nativeVideos !== null && (youtubeIframe != null || youtubeIframe2 != null)) {
+        nativeVideos.setAttribute('autoplay', 'true');
       }
 
     });
