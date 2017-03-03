@@ -16,4 +16,32 @@
     {% include footer.html %}
 
   </body>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      var nativeVideos = document.querySelector('.medium-editor-element .video video');
+      var youtubeIframe = document.querySelector('.medium-editor-element .yt.embed iframe');
+      var youtubeIframe2 = document.querySelector('.medium-editor-element .video-youtube iframe');
+
+      var executeYouTube = function(_iframe) {
+        _iframe.src = _iframe.src + '?autoplay=1';
+      }
+
+      if(nativeVideos != null && (youtubeIframe != null || youtubeIframe2 != null)) {
+        if(youtubeIframe !== null) {
+          executeYouTube(youtubeIframe);
+        } else {
+          executeYouTube(youtubeIframe2);
+        }
+      } else if(nativeVideos == null && (youtubeIframe != null || youtubeIframe2 != null)) {
+        if(youtubeIframe !== null) {
+          executeYouTube(youtubeIframe);
+        } else {
+          executeYouTube(youtubeIframe2);
+        }
+      } else if (nativeVideos !== null && (youtubeIframe != null || youtubeIframe2 != null)) {
+        nativeVideos.setAttribute('autoplay', 'true');
+      }
+
+    });
+  </script>
 </html>
